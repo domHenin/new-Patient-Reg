@@ -11,3 +11,4 @@ NOTES:
 NOTES:
 > added 'setters' and 'getters'  to the int
 > need to add 'setters' and 'getters' to the strings
+>>2002: added 'setters' and 'getters' to the strings

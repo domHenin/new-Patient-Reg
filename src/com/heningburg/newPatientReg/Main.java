@@ -1,3 +1,4 @@
+//need to set these for Strings
 package com.heningburg.newPatientReg;
 import java.util.*;
 
@@ -9,8 +10,8 @@ class buildPatient {
     int employerNumber;
     int employerZip;
     int employerAddressNumber;
-    //  static int employerExt;  --> Not sure what this is just yet
     int userChoice;
+    //  static int employerExt;  --> Not sure what this is just yet
     String patientStreetName;
     String employerName;
     String employerCity;
@@ -71,7 +72,6 @@ class buildPatient {
     }
 
 
-
 //setter and getter for employerAddressNumber
     public void setEmployerAddressNumber(int employerAddressNumber) {
         this.employerAddressNumber = employerAddressNumber;
@@ -81,9 +81,70 @@ class buildPatient {
     }
 
 //setter and getter for patientStreetName
-//need to set these for Strings
+    public void setPatientStreetName() {
+        this.patientStreetName = patientStreetName;
+    }
+    public String getEmployerStreetName() {
+        return patientStreetName;
+    }
+
+//setter and getter for employerName
+    public void setEmployerName(String employerName) {
+        this.employerName = employerName;
+    }
+    public String getEmployerName() {
+        return employerName;
+    }
+
+//setter and getter for UserChoice
+    public void setUserChoice(int userChoice) {
+        this.userChoice = userChoice;
+    }
+    public int getUserChoice() {
+        return userChoice;
+    }
+
+//setter and getter for employerCity
+    public void setEmployerCity(String employerCity) {
+        this.employerCity = employerCity;
+    }
+    public String getEmployerCity() {
+        return employerCity;
+    }
+
+//setter and getter for employerAddress
+    public void setEmployerAddress(String employerAddress) {
+        this.employerAddress = employerAddress;
+    }
+    public String getEmployerAddress() {
+        return employerAddress;
+    }
 
 
+//setter and getter for employerStreetName
+    public void setEmployerStreetName(String employerStreetName) {
+        this.patientStreetName = employerStreetName;
+    }
+    public String geEemployerStreetName() {
+        return employerStreetName;
+    }
+
+//setter and getter for city
+    public void setCity(String city) {
+        this.city = city;
+    }
+    public String getCity() {
+        return city;
+    }
+
+
+//setter and getter for state
+    public void setState(String state) {
+        this.state = state;
+    }
+    public String getState() {
+        return state;
+    }
 }
 
 
@@ -97,7 +158,7 @@ public class Main {
 //    static int employerNumber;
 //    static int employerZip;
 //    static int employerAddressNumber;
-//  static int employerExt;  --> Not sure what this is just yet
+//    static int employerExt;  --> Not sure what this is just yet
 //    static int userChoice;
 //    static String employerName;
 //    static String employerCity;
@@ -109,10 +170,12 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to New Patient Regristration.");
         System.out.println("Please input the following information for patient.");
-        userName();
-        userAddress();
-        userMiscellaneous();
-        userOccupation();
+//        userName();
+//        userAddress();
+//        userMiscellaneous();
+//        userOccupation();
+
+
     }
 }
 //    private static void userOccupation() {
