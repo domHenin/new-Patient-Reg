@@ -1,6 +1,7 @@
 package com.heningburg.newPatientReg;
 
 public class Patient {
+// Initialization
    private String patientFirstName;
    private String patientLastName;
    private String patientStreetName;
@@ -32,17 +33,6 @@ public class Patient {
     public int getPatientBirthMonth() { return patientBirthMonth; }
     public int getPatientBirthDay() { return patientBirthDay; }
     public int getPatientBirthYear() { return patientBirthYear; }
-
-//    Changers
-//    public String changePatientFirstName(String newFirstName) {
-//        patientFirstName = newFirstName;
-//        return patientFirstName;
-//    }
-//
-//    public String changePatientLastName(String newLastName) {
-//        patientLastName = newLastName;
-//        return patientLastName;
-//    }
 }
 
 
