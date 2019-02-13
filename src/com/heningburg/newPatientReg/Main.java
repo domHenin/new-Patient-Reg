@@ -4,6 +4,7 @@ import java.util.*;
 public class Main {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
+//      For Patient
         String patientFirstName;
         String patientLastName;
         String patientResidState;
@@ -16,7 +17,17 @@ public class Main {
         int patientBirthDay;
         int patientBirthYear;
 
+//      For Patient Employer
+        String employerName;
+        int employerContact;
+        int employerContactExt;
+        String employerStreetName;
+        int employerStreetNumber;
+        String employerState;
+        String employerCity;
+
         Patient patient = new Patient();
+        Employer employer = new Employer();
         System.out.println("Welcome to New Patient Registration.");
         System.out.println("Please input the following information for patient.");
 
@@ -97,8 +108,45 @@ public class Main {
         System.out.println("Patient's Residence: "+patient.getPatientZipCode()+", "+patient.getPatientResidsState()+", "+patient.getPatientResidsCity());
         System.out.println("Patient's Social: "+patient.getPatientSocialSecurityNum());
         System.out.println("Patient's Birthday: (Month)"+patient.getPatientBirthMonth()+" (Day)"+patient.getPatientBirthDay()+" (Year)"+patient.getPatientBirthYear());
-//        System.out.println(patient.getPatientBirthDay());
-//        System.out.println(patient.getPatientBirthYear());
+//      System.out.println(patient.getPatientBirthDay());
+//      System.out.println(patient.getPatientBirthYear());
+
+        System.out.println("Enter "+patientFirstName+" Employer Name: ");
+        employerName = input.nextLine();
+        employer.setEmployerName(employerName);
+
+        System.out.println("Enter "+patientFirstName+" Employer Contact(number): ");
+        employerContact = input.nextInt();
+        employer.setEmployerContact(employerContact);
+
+        System.out.println("Enter "+patientFirstName+" Employer Extentsion(number): ");
+        employerContactExt = input.nextInt();
+        employer.setEmployerContactExt(employerContactExt);
+
+        System.out.println("Enter "+patientFirstName+" Employer Street Number: ");
+        employerStreetNumber = input.nextInt();
+        employer.setEmployerStreetNumber(employerStreetNumber);
+
+        System.out.println("Enter "+patientFirstName+" Employer Street Name: ");
+        employerStreetName = input.nextLine();
+        employer.setEmployerStreetName(employerStreetName);
+
+        System.out.println("Enter "+patientFirstName+" Employer City: ");
+        employerCity = input.nextLine();
+        employer.setEmployerCity(employerCity);
+
+        System.out.println("Enter "+patientFirstName+" Employer State: ");
+        employerState = input.nextLine();
+        employer.setEmployerState(employerState);
+
+        System.out.println("RETURN....");
+        System.out.println(employer.getEmployerName());
+        System.out.println(employer.getEmployerContact());
+        System.out.println(employer.getEmployerContactExt());
+        System.out.println(employer.getEmployerStreetNumber());
+        System.out.println(employer.getEmployerStreetName());
+        System.out.println(employer.getEmployerCity());
+        System.out.println(employer.getEmployerState());
     }
 }
 
