@@ -6,6 +6,8 @@ public class Main {
     public static void main(String[] args) {
         String patientFirstName;
         String patientLastName;
+        String patientResidState;
+        String patientResidCity;
         String patientStreetName;
         int patientHouseNumber;
         int patientZipCode;
@@ -46,7 +48,19 @@ public class Main {
         System.out.println("Patients's Residence Zip Code: ");
         patientZipCode = input.nextInt();
         patient.setPatientZipCode(patientZipCode);
-//      System.out.println("Return: "+patient.getPatientZipCode());
+//TEST  System.out.println("Return: "+patient.getPatientZipCode());
+
+//      Patient Residence State
+        System.out.println("Patient's Residence State: ");
+        patientResidState = input.nextLine();
+        patient.setPatientResidsState(patientResidState);
+//TEST  System.out.println("Return: "+patient.getPatientResidsState());
+
+//      Patient Residence City
+        System.out.println("Patient's Residence City: ");
+        patientResidCity = input.nextLine();
+        patient.setPatientResidsCity(patientResidCity);
+//TEST  System.out.println("Return: "+patient.getPatientResidsCity());
 
 //      Patient Social Security Number
         System.out.println("Patient's Social Security Number: ");
@@ -72,17 +86,19 @@ public class Main {
         patient.setPatientBirthYear(patientBirthYear);
 //TEST  System.out.println("Return: "+patient.getPatientBirthYear());
 
+        System.out.println("\nThank You");
+
         System.out.println("RETURNS....");
-        System.out.println(patient.getPatientFirstName());
-        System.out.println(patient.getPatientLastName());
-        System.out.println(patient.getPatientStreetName());
-        System.out.println(patient.getPatientHouseNumber());
-        System.out.println(patient.getPatientZipCode());
-        System.out.println(patient.getPatientZipCode());
-        System.out.println(patient.getPatientSocialSecurityNum());
-        System.out.println(patient.getPatientBirthMonth());
-        System.out.println(patient.getPatientBirthDay());
-        System.out.println(patient.getPatientBirthYear());
+        System.out.println("Patient's Name: "+patient.getPatientFirstName()+" "+patient.getPatientLastName());
+//      System.out.println(patient.getPatientLastName());
+        System.out.println("Patient's Residence: "+patient.getPatientHouseNumber()+" "+patient.getPatientStreetName());
+//      System.out.println(patient.getPatientHouseNumber());
+//      System.out.println(patient.getPatientZipCode());
+        System.out.println("Patient's Residence: "+patient.getPatientZipCode()+", "+patient.getPatientResidsState()+", "+patient.getPatientResidsCity());
+        System.out.println("Patient's Social: "+patient.getPatientSocialSecurityNum());
+        System.out.println("Patient's Birthday: (Month)"+patient.getPatientBirthMonth()+" (Day)"+patient.getPatientBirthDay()+" (Year)"+patient.getPatientBirthYear());
+//        System.out.println(patient.getPatientBirthDay());
+//        System.out.println(patient.getPatientBirthYear());
     }
 }
 

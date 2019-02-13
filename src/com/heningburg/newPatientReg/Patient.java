@@ -5,6 +5,8 @@ public class Patient {
    private String patientFirstName;
    private String patientLastName;
    private String patientStreetName;
+   private String patientResidsState;
+   private String patientResidsCity;
    private int patientHouseNumber;
    private int patientZipCode;
    private int patientSocialSecurityNum;
@@ -15,6 +17,8 @@ public class Patient {
 //  Setters
     public void setPatientFirstName(String patientFirstName) { this.patientFirstName = patientFirstName; }
     public void setPatientLastName(String patientLastName) { this.patientLastName = patientLastName; }
+    public void setPatientResidsState(String patientResidsState) { this.patientResidsState = patientResidsState; }
+    public void setPatientResidsCity(String patientResidsCity) { this.patientResidsCity = patientResidsCity; }
     public void setPatientStreetName(String patientStreetName) { this.patientStreetName = patientStreetName; }
     public void setPatientHouseNumber(int patientHouseNumber) { this.patientHouseNumber = patientHouseNumber; }
     public void setPatientZipCode(int patientZipCode) { this.patientZipCode = patientZipCode; }
@@ -26,6 +30,8 @@ public class Patient {
 //  Getters
     public String getPatientFirstName(){ return patientFirstName; }
     public String getPatientLastName() { return  patientLastName; }
+    public String getPatientResidsState() { return patientResidsState; }
+    public String getPatientResidsCity() { return patientResidsCity; }
     public String getPatientStreetName() { return patientStreetName; }
     public int getPatientHouseNumber() { return  patientHouseNumber; }
     public int getPatientZipCode() { return patientZipCode; }
