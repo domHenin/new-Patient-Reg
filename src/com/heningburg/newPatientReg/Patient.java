@@ -3,6 +3,7 @@ package com.heningburg.newPatientReg;
 public class Patient {
    private String patientFirstName;
    private String patientLastName;
+   private String patientStreetName;
    private int patientHouseNumber;
    private int patientZipCode;
    private int patientSocialSecurityNum;
@@ -13,6 +14,7 @@ public class Patient {
 //  Setters
     public void setPatientFirstName(String patientFirstName) { this.patientFirstName = patientFirstName; }
     public void setPatientLastName(String patientLastName) { this.patientLastName = patientLastName; }
+    public void setPatientStreetName(String patientStreetName) { this.patientStreetName = patientStreetName; }
     public void setPatientHouseNumber(int patientHouseNumber) { this.patientHouseNumber = patientHouseNumber; }
     public void setPatientZipCode(int patientZipCode) { this.patientZipCode = patientZipCode; }
     public void setPatientSocialSecurityNum(int patientSocialSecurityNum) { this.patientSocialSecurityNum = patientSocialSecurityNum; }
@@ -23,6 +25,7 @@ public class Patient {
 //  Getters
     public String getPatientFirstName(){ return patientFirstName; }
     public String getPatientLastName() { return  patientLastName; }
+    public String getPatientStreetName() { return patientStreetName; }
     public int getPatientHouseNumber() { return  patientHouseNumber; }
     public int getPatientZipCode() { return patientZipCode; }
     public int getPatientSocialSecurityNum() { return patientSocialSecurityNum; }
@@ -31,15 +34,15 @@ public class Patient {
     public int getPatientBirthYear() { return patientBirthYear; }
 
 //    Changers
-    public String changePatientFirstName(String newFirstName) {
-        patientFirstName = newFirstName;
-        return patientFirstName;
-    }
-
-    public String changePatientLastName(String newLastName) {
-        patientLastName = newLastName;
-        return patientLastName;
-    }
+//    public String changePatientFirstName(String newFirstName) {
+//        patientFirstName = newFirstName;
+//        return patientFirstName;
+//    }
+//
+//    public String changePatientLastName(String newLastName) {
+//        patientLastName = newLastName;
+//        return patientLastName;
+//    }
 }
 
 
