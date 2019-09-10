@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Main {
     static Scanner input = new Scanner(System.in);
+
     public static void main(String[] args) {
 //      For Patient
         String patientFirstName;
@@ -133,6 +134,8 @@ public class Main {
         employerStreetNumber = input.nextInt();
         employer.setEmployerStreetNumber(employerStreetNumber);
 
+        input.nextLine();
+
         System.out.println("Enter "+patientFirstName+" Employer Street Name: ");
         employerStreetName = input.nextLine();
         employer.setEmployerStreetName(employerStreetName);
@@ -143,16 +146,18 @@ public class Main {
 
         System.out.println("Enter "+patientFirstName+" Employer State: ");
         employerState = input.nextLine();
-        employer.setEmployerState(employerState);
+//        employer.setEmployerState(employerState);
 
-        System.out.println("RETURN....");
-        System.out.println(employer.getEmployerName());
-        System.out.println(employer.getEmployerContact());
-        System.out.println(employer.getEmployerContactExt());
-        System.out.println(employer.getEmployerStreetNumber());
-        System.out.println(employer.getEmployerStreetName());
-        System.out.println(employer.getEmployerCity());
-        System.out.println(employer.getEmployerState());
+        System.out.println(employer.toString());
+
+//        System.out.println("RETURN....");
+//        System.out.println(employer.getEmployerName());
+//        System.out.println(employer.getEmployerContact());
+//        System.out.println(employer.getEmployerContactExt());
+//        System.out.println(employer.getEmployerStreetNumber());
+//        System.out.println(employer.getEmployerStreetName());
+//        System.out.println(employer.getEmployerCity());
+//        System.out.println(employer.getEmployerState());
     }
 }
 
