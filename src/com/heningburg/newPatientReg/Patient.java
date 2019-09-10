@@ -39,6 +39,24 @@ public class Patient {
     public int getPatientBirthMonth() { return patientBirthMonth; }
     public int getPatientBirthDay() { return patientBirthDay; }
     public int getPatientBirthYear() { return patientBirthYear; }
+
+
+    @Override
+    public String toString() {
+        return "Patient Info:\n" +
+                "Patient's Name: "+patientFirstName.toUpperCase()+
+                " "+patientLastName.toUpperCase()+
+                "\nPatient's Residence: "+patientHouseNumber+
+                " "+patientStreetName.toUpperCase()+" "+
+                " "+patientResidsCity.toUpperCase()+", "
+                +patientResidsState.toUpperCase()+
+                ", "+patientZipCode+
+                "\nPatient's Birthday: "+
+                "(Month)"+patientBirthMonth+
+                " (Day)"+patientBirthDay+
+                " (Year)"+patientBirthYear+
+                "\nPatient's Social Security: "+patientSocialSecurityNum+"\n";
+    }
 }
 
 
