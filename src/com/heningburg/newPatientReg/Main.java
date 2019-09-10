@@ -67,6 +67,8 @@ public class Main {
         patient.setPatientResidsState(patientResidState);
 //TEST  System.out.println("Return: "+patient.getPatientResidsState());
 
+        input.nextLine();
+
 //      Patient Residence City
         System.out.println("Patient's Residence City: ");
         patientResidCity = input.nextLine();
@@ -100,16 +102,20 @@ public class Main {
         System.out.println("\nThank You");
 
         System.out.println("RETURNS....");
-        System.out.println("Patient's Name: "+patient.getPatientFirstName()+" "+patient.getPatientLastName());
-//      System.out.println(patient.getPatientLastName());
-        System.out.println("Patient's Residence: "+patient.getPatientHouseNumber()+" "+patient.getPatientStreetName());
-//      System.out.println(patient.getPatientHouseNumber());
-//      System.out.println(patient.getPatientZipCode());
-        System.out.println("Patient's Residence: "+patient.getPatientZipCode()+", "+patient.getPatientResidsState()+", "+patient.getPatientResidsCity());
-        System.out.println("Patient's Social: "+patient.getPatientSocialSecurityNum());
-        System.out.println("Patient's Birthday: (Month)"+patient.getPatientBirthMonth()+" (Day)"+patient.getPatientBirthDay()+" (Year)"+patient.getPatientBirthYear());
-//      System.out.println(patient.getPatientBirthDay());
-//      System.out.println(patient.getPatientBirthYear());
+//        System.out.println("Patient's Name: "+patient.getPatientFirstName()+" "+patient.getPatientLastName());
+////      System.out.println(patient.getPatientLastName());
+//        System.out.println("Patient's Residence: "+patient.getPatientHouseNumber()+" "+patient.getPatientStreetName());
+////      System.out.println(patient.getPatientHouseNumber());
+////      System.out.println(patient.getPatientZipCode());
+//        System.out.println("Patient's Residence: "+patient.getPatientZipCode()+", "+patient.getPatientResidsState()+", "+patient.getPatientResidsCity());
+//        System.out.println("Patient's Social: "+patient.getPatientSocialSecurityNum());
+//        System.out.println("Patient's Birthday: (Month)"+patient.getPatientBirthMonth()+" (Day)"+patient.getPatientBirthDay()+" (Year)"+patient.getPatientBirthYear());
+////      System.out.println(patient.getPatientBirthDay());
+////      System.out.println(patient.getPatientBirthYear());
+
+        System.out.println(patient.toString());;
+
+        input.nextLine();
 
         System.out.println("Enter "+patientFirstName+" Employer Name: ");
         employerName = input.nextLine();
@@ -119,7 +125,7 @@ public class Main {
         employerContact = input.nextInt();
         employer.setEmployerContact(employerContact);
 
-        System.out.println("Enter "+patientFirstName+" Employer Extentsion(number): ");
+        System.out.println("Enter "+patientFirstName+" Employer Extension(number): ");
         employerContactExt = input.nextInt();
         employer.setEmployerContactExt(employerContactExt);
 
