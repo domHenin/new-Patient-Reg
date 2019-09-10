@@ -26,6 +26,17 @@ public class Employer {
     public int getEmployerStreetNumber() { return employerStreetNumber; }
     public String getEmployerState() { return employerState; }
     public String getEmployerCity() { return employerCity; }
+
+    public String toString() {
+        return "Employer Name: "+employerName+
+                "\nEmployer Contact: "+employerContact+
+                "\nEmployer Contact Ext: "+employerContactExt+
+                "\nEmployer Street Number: "+employerStreetNumber+
+                "\nEmployer Street Name: "+employerName+
+                "\nEmployer City: "+employerCity+
+                "\nEmployer State: "+employerState;
+    }
+
 }
 
 
